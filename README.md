@@ -42,4 +42,22 @@ Perintah `git merge` digunakan untuk menggabungkan perubahan dari cabang yang be
 
 Perintah `git status` digunakan untuk menampilkan status terkini dari repositori. Ini menunjukkan file mana yang dimodifikasi, di-staging, atau tidak terlacak.
 
-Ini hanya beberapa dari banyak perintah Git yang tersedia. Untuk informasi lebih detail, lihat dokumentasi resmi Git.
+## 11. `git branch -m`
+
+Perintah `git branch -m` digunakan untuk mengganti nama branch di lokal. Anda dapat menggunakan perintah ini dengan menentukan nama branch lama dan nama branch baru yang diinginkan.
+
+Contoh penggunaan:
+```bash
+git branch -m nama-branch-lama nama-branch-baru
+```
+
+## 12. `git push origin :nama-branch-lama nama-branch-baru`
+
+Perintah `git push origin :nama-branch-lama nama-branch-baru` digunakan untuk mengganti nama branch di repositori remote. Anda dapat menggunakan perintah ini untuk menghapus branch lama dan mengunggah branch baru dengan nama yang diinginkan.
+
+Contoh penggunaan:
+```bash
+git push origin :nama-branch-lama nama-branch-baru
+```
+
+
