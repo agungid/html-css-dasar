@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* warna background utama */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+nav {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    padding: 20px 0;
+    top: 0;
+    position: sticky;
+    text-align: center;
+    background-color: rgb(138, 208, 248);
+}
+nav span {
+    color: black;
+    margin-right: 70px;
+    margin-bottom: 8px;
+}
+header {
+    text-align: center;
+}
+.container {
+    display: flex;
+    gap: 20px; /* Jarak antara aside dan main */
+    margin: 20px;
+}
+aside {
+    flex: 1; 
+    background-color: #e0e0e0;
+    padding: 2px;
+}
+main {
+    flex: 3; /* Main mengambil lebih banyak ruang */
+    background-color: #e0e0e0;
+    padding: 20px; /* Tambahkan padding jika diperlukan */
+}
+.biodata {
+    text-align: left; /* Menyelaraskan teks di seluruh elemen .biodata ke kiri */
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+.biodata div {
+    display: flex;
+    margin-bottom: 8px;
+    align-items: center; /* Menyelaraskan item secara vertikal ke tengah jika diperlukan */
+}
+.biodata .label {
+    flex: 0 0 150px; /* Lebar tetap untuk label */
+    font-weight: bold;
+    text-align: left; /* Menyelaraskan teks di label ke kiri */
+}
+.biodata .colon {
+    flex: 0 0 10px; /* Lebar tetap untuk titik dua */
+}
+.biodata .value {
+    flex: 1; /* Mengambil sisa ruang yang tersedia */
+    text-align: left; /* Menyelaraskan teks di value ke kiri */
+}
