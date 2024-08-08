@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=git add ., initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-      <p>ini merupakan file yang baru dibuat</p>
-</body>
+    <head>
+        <title>Layout.web</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+            }
+            .header {
+                background-colour: green;
+                padding: 20px;
+                text-align: center;
+                border: lightgreen;
+            }
+            div.galerry {
+                margin: 0;
+                border: 1px solid green;
+                text-align: center;
+                width: 100%;
+            }
+            div.gallery: hover {
+                border: 1px solid green;
+            }
+            div.galerry img {
+                width: 100%;
+                height: auto;
+            }
+            div.desc {
+                padding: 15px;
+                text-align: center;
+                font-size: 90%;
+            }
+            .column {
+                float: left;
+                width: 30%;
+                heigth: 350px;
+                padding: 20px;
+                background-colour: white;
+                text-align: left;
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            article {
+                float: right;
+                padding: 20px;
+                width: 70%;
+                background-colour: white;
+                text-align: justify;
+                height: right;
+                text-align: right;
+            }
+            .row: :after {
+                content: "";
+                clear: both;
+            }
+            .footer {
+                background-colour: green;
+                padding: 10px;
+                text-align: center;
+                width: 100%;
+            }
+            @media (max-width: 600px) {
+                column, article {
+                    width: 100%; 
+                    height: auto;
+                }
+            }
+                        
+        </style>
+    </head>
+    <body>
+        </div>
+         <div class="header">
+      <h2>detakidn.com</h2>
+      <h1>STRENGTHEN INTERNATIONAL NETWORKS, UNUSA CBLP UMMUL QURO HOLD AN INTERNATIONAL SEMINAR</h1>
+    </div>
+    <div class="gallery">
+      <a target="_blank" herf="https://detakidn.com/wp-content/uploads/2024/06/header_0012-scaled.webp">
+        <img src="https://detakidn.com/wp-content/uploads/2024/06/header_0012-scaled.webp" alt="detakidn.com" width="100%" height="90%">
+      </a>
+      <div class="desc">International Seminar On The Book Launch <i>"Typology And Islamic Legal Thought"</i> with Imamuddin <i>(Lectural At The University Of Malaya, Malaysia)</i>
+      </div>
+    </div>
+        <div class="column">
+      <p>Developing The Mindset Of Student In Islamic Law In The Present Era</p>
+      <hr>
+      <p>Ahmad Jailani Siddiq said:</p> 
+      <p><i>"This event is conducted to understand the thoughts of experts in responding to Islamic laws that are now being influenced by liberal thinking, which can be misleading for the general public"</i></p>
+      <p><i>"Academic Departement"</i></p>
+      <hr>
+    </div>
+    <div class="article">
+      <h2>Typology Of Islamic Legal Thought</h2>
+      <h3>by: Imamuddin</h3>
+      <p>detakidn.com - Nahdlatul Ulama University of Surabaya (UNUSA) with the Community Based Learning Pesantren (CBLP) Ummul Quro program located in Pamekasan Regency held an International Book Surgery Seminar "Typology of Islamic Legal Thought" by Imamuddin from the University of Malaya, Malaysia.</p>
+      <p>The seminar, which took place at the ITB Ummul Quro campus, was attended by Imamuddin as the speaker or lecturer at the University of Malaya, several campus management bodies, and 60 students who participated in the event. Friday (20/06/24).</p>
+      <p>In addition, Masduki, one of the campus managers, has high hopes for this event. He hopes that students can be more open and play a positive role in society.<i>"Through this activity, it is hoped that students can become facilitators in the community or act as shields to guard against naughty thoughts present in their environment,"</i> he explained.</p>
+    </div>
+        <div class="footer">
+      <p>detakidn.com</p>
+        </div>
+    </body>
 </html>
