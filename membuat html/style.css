@@ -1,0 +1,80 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* warna background utama */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+nav {
+    background-color: #2196F3; /* warna background navbar */
+    color: #fff; /* warna teks navbar */
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top:0; /* menyesuaikan dengan tinggi header */
+    z-index: 1000; /* navbar tampil di atas konten lain */
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+nav a:hover {
+    background-color: #1976D2; /* warna latar belakang saat hover */
+}
+main {
+    display: flex;
+    flex: 1;
+    margin: 20px;
+    margin-top: 70px; /* menyesuaikan margin atas konten utama */
+}
+section {
+    flex: 2;
+    background-color: #fff; /* warna background section */
+    color: #333; /* warna teks section */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-right: 20px;
+    overflow-y: auto;
+}
+aside {
+    flex: 1;
+    background-color: #e9adad; /* warna background aside */
+    color: #333; /* warna teks aside */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+aside h3{
+    display: center;
+    border: 2px solid transparent;
+}
+aside h3:hover{
+    border : 2px solid blue;
+}
+h3{
+    color: rebeccapurple;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+    main {
+        flex-direction: column;
+        margin: 10px;
+        margin-top: 60px; /* menyesuaikan margin atas konten utama */
+    }
+    section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
