@@ -63,3 +63,39 @@ git push origin :nama-branch-lama nama-branch-baru
 ```
 
 
+# Membuat SSH Key dan Menambahkannya ke GitHub
+
+Untuk membuat SSH key dan menambahkannya ke akun GitHub Anda, ikuti langkah-langkah berikut:
+
+1. Buka terminal atau command prompt Anda.
+
+2. Generate SSH key baru dengan menjalankan perintah berikut:
+    ```bash
+    ssh-keygen -t rsa -b 4096 -C "email_anda@example.com"
+    ```
+    Ganti "email_anda@example.com" dengan alamat email Anda sendiri.
+
+3. Anda akan diminta untuk memasukkan lokasi file untuk menyimpan key. Tekan Enter untuk menyimpannya di lokasi default.
+
+4. Anda juga akan diminta untuk memasukkan passphrase. Disarankan untuk menggunakan passphrase yang kuat untuk keamanan tambahan. Tekan Enter jika Anda ingin melewati pengaturan passphrase.
+
+5. Setelah key berhasil dibuat, Anda dapat menampilkan key dengan menjalankan perintah berikut:
+    ```bash
+    cat ~/.ssh/id_rsa.pub
+    ```
+
+6. Salin seluruh output dari perintah tersebut.
+
+7. Buka pengaturan akun GitHub Anda dan navigasikan ke bagian "SSH and GPG keys".
+
+8. Klik "New SSH key" atau "Add SSH key".
+
+9. Beri judul pada SSH key Anda (misalnya, "SSH Key Saya").
+
+10. Tempelkan key yang telah Anda salin ke kolom "Key".
+
+11. Klik "Add SSH key" untuk menyimpannya.
+
+Sekarang Anda telah berhasil membuat SSH key dan menambahkannya ke akun GitHub Anda. Anda sekarang dapat menggunakan SSH untuk berinteraksi dengan aman dengan repositori-repositori Anda di GitHub.
+
+
