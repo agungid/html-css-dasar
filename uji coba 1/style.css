@@ -38,18 +38,42 @@ main {
     background-color: #e0e0e0;
     padding: 20px; /* Tambahkan padding jika diperlukan */
 }
-.biodata {
-    text-align: left; /* Menyelaraskan teks di seluruh elemen .biodata ke kiri */
+.biodata-container {
     display: flex;
+    align-items: flex-start;
+}
+.biodata {
+    text-align: left;
+    display: flex; 
     flex-direction: column;
     width: 50%;
-    margin: 20px auto;
+    margin: 20px;
     font-family: Arial, sans-serif;
 }
 .biodata div {
     display: flex;
     margin-bottom: 8px;
-    align-items: center; /* Menyelaraskan item secara vertikal ke tengah jika diperlukan */
+    align-items: center;
+}
+/* .biodata {
+    flex: 1;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    gap: 10px;
+}
+
+.biodata div {
+    display: contents;
+} */
+
+.foto {
+    margin-left: 20px; /* Jarak antara biodata dan foto */
+}
+
+.foto img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px; /* Optional: Membuat sudut gambar melengkung */
 }
 .biodata .label {
     flex: 0 0 150px; /* Lebar tetap untuk label */
