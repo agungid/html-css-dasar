@@ -15,6 +15,12 @@ nav {
     text-align: center;
     background-color: rgb(138, 208, 248);
 }
+nav span:hover{
+    background-color: blue;
+    border-radius: 30%;
+    padding: 5px;
+    color: aqua;
+}
 nav span {
     color: black;
     margin-right: 70px;
