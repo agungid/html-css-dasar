@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            max-width: 800px;
+            border-collapse: collapse;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid white;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: white;
+        }
+        tr:hover {
+            background-color: darkgrey;
+        }
+        tfoot {
+            background-color: #e0d5d5;
+            text-align: center;
+        }
+        td[rowspan] {
+            background-color: #c9e481;
+            vertical-align: middle;
+        }
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr {
+                border: 1px solid #ccc;
+                margin-bottom: 5px;
+                display: block;
+            }
+            td {
+                border: none;
+                position: relative;
+                padding-left: 50%;
+                white-space: nowrap;
+            }
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: bold;
+                background: #f4f4f4;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Ayoku</th>
+                <th>Ayo Pertama</th>
+                <th>Ayo Pertama</th>
+                <th>Ayo Pertama</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3" data-label="Gabungan">Ini Gabungan</td>
+                <td>Ayo Pertama</td>
+                <td>Ayo Pertama</td>
+                <td>Ayo Pertama</td>
+            </tr>
+            <tr>
+                <td>Ayo Pertama</td>
+                <td>Ayo Pertama</td>
+                <td>Ayo Pertama</td>
+            </tr>
+            <tr>
+                <td>Ayo Pertama</td>
+                <td>Ayo Pertama</td>
+                <td>Ayo Pertama</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Jumlahku</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

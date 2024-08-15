@@ -9,22 +9,25 @@ body {
 nav {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: large;
-    padding: 20px 0;
     top: 0;
+    padding: 20px 0;
+    
     position: sticky;
     text-align: center;
     background-color: rgb(138, 208, 248);
+}
+nav span {
+    color: black;
+    margin-right: 70px;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
 }
 nav span:hover{
     background-color: blue;
     border-radius: 30%;
     padding: 5px;
     color: aqua;
-}
-nav span {
-    color: black;
-    margin-right: 70px;
-    margin-bottom: 8px;
+    transform: scale(1.5);
 }
 header {
     text-align: center;
@@ -61,16 +64,6 @@ main {
     margin-bottom: 8px;
     align-items: center;
 }
-/* .biodata {
-    flex: 1;
-    display: grid;
-    grid-template-columns: auto auto 1fr;
-    gap: 10px;
-}
-
-.biodata div {
-    display: contents;
-} */
 
 .foto {
     margin-left: 20px; /* Jarak antara biodata dan foto */
