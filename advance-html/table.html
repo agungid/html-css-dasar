@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">    
-    <head>
-        <meta charset=" UTF-8">
-        <title>Contoh Table</title>
-    </head>
-    <body>
-        <table border="1">
+<html lang="en">
+
+<head>
+    <meta charset=" UTF-8">
+    <title>Contoh Table</title>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
             <tr>
                 <th>Nama</th>
                 <th>Umur</th>
                 <th>Alamat</th>
             </tr>
+        </thead>
+        <tbody>
             <tr>
                 <td>Andi</td>
                 <td>25</td>
@@ -19,8 +24,14 @@
             <tr>
                 <td>Budi</td>
                 <td>21</td>
-                <td>Sampang</td>
+                <td>Bangkalan</td>
             </tr>
-        </table>
-    </body>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Jumlah Data: 2</td>
+            </tr>
+    </table>
+</body>
+
 </html>
