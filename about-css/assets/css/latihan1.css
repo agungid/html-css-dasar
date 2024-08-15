@@ -1,0 +1,28 @@
+h1 { /* Tag Selector */
+    color:red
+}
+
+* { /* Universal Selector */
+    color: cadetblue;
+}
+
+[type="submit"] { /* Attribute Selector */
+    background-color: rgb(47, 47, 52);
+}
+[href] { /* Attribute Selector */
+    color: rgb(92, 96, 146);
+    text-decoration: none;
+}
+.container { /* Class Selector */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+#box { /* ID Selector */
+    width: 100px;
+    height: 100px;
+    background-color: rgb(118, 170, 132);
+    text-align: center;
+    line-height: 100px;
+    color: white;
+}
