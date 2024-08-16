@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh !important dalam CSS</title>
+    <style>
+        p {
+            color: red;
+        }
+
+        .highlight {
+            color: green !important;
+        }
+
+        #special {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p class="highlight" id="special">
+        Teks ini akan berwarna hijau karena aturan dengan !important memiliki prioritas lebih tinggi.
+    </p>
+</body>
+</html>

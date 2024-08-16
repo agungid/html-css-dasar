@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Nilai Inherit</title>
+    <style>
+        .parent {
+            color: rgb(255, 64, 0);
+            font-size: 30px;
+            /* Warna teks untuk elemen induk */
+            font-family: Arial, sans-serif;
+            /* Font untuk elemen induk */
+        }
+
+        body {
+            color: green;
+            font-family: Arial, sans-serif;
+            /* Font untuk elemen body */
+        }
+
+        .child {
+            color: inherit;
+            /* Warna teks diwarisi dari elemen induk */
+            font-family: inherit;
+            /* Font diwarisi dari elemen induk */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <p>Ini adalah elemen induk.</p>
+        <div class="child">
+            <p>Ini adalah elemen anak yang mewarisi gaya dari elemen induk.</p>
+        </div>
+    </div>
+</body>
+
+</html>
