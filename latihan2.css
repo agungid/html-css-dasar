@@ -1,0 +1,45 @@
+*{
+    background-color: rgb(163, 163, 165);
+}
+body{
+    font-family: Verdana;
+}
+
+table{
+    width: 400px;
+   border-spacing: 5px;
+   border-collapse: collapse;
+}
+.garis{
+    border-bottom: none;
+}
+#atas{
+    border-top: none;
+
+}
+th{
+    border-top: 1px solid darkgoldenrod;
+    border-bottom: 3px solid;
+}
+td{
+    text-align: center;
+}
+
+th,td{
+    padding: 5px 10px;
+}
+.genap{
+    background-color: rgb(226, 205, 205);
+}
+
+tr :hover{
+    background-color: blue;
+
+}
+
+h4{
+    font-size: 30px;
+    width: 300px;
+    border: 10px solid white;
+    background-color: red;
+}
