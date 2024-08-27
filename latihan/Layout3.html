@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Makanan</title>
+    <style>
+        /* CSS Internal */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #d35400;
+            color: white;
+            padding: 10px;
+        }
+
+        .header-container h3 {
+            margin: 0;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .nav-menu a:hover {
+            background-color: #a63d00;
+        }
+
+        nav {
+            background-color: #c14100;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav ul li a:hover {
+            background-color: #a63d00;
+        }
+        .description {
+          text-align: center;
+        }
+      
+        }
+        .paragraph {
+          text-align: center;
+        }
+
+        .gallery {
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+        }
+
+        .gallery h2 {
+            text-align: center;
+            color: #d35400;
+        }
+
+        .gallery-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            flex: 1 1 calc(33.333% - 20px); /* 3 items per row, accounting for the gap */
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 500px; /* Fixed height for consistency */
+            object-fit: cover; /* Ensure images fit within the box */
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item p {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .gallery-item {
+                flex: 1 1 calc(50% - 20px); /* 2 items per row */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-item {
+                flex: 1 1 100%; /* 1 item per row */
+            }
+        }
+    </style>
+</head>
+<body>
+  
+    <!-- Header Section -->
+    <div class="header-container">
+        <h3>`Mingle Resto</h3>
+        <div class="nav-menu">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#makanan-pembuka">Makanan Pembuka</a></li>
+            <li><a href="#makanan-utama">Makanan Utama</a></li>
+            <li><a href="#makanan-penutup">Makanan Penutup</a></li>
+        </ul>
+    </nav>
+ <div class="description">
+        <h2>`Mingle Resto</h2>
+        <a href="#"><span>RATING 4.7 (619) 》</span></a>
+        <a href="#"><span>504 REVIEWS 》</span></a>
+        <a href="#"><span>12 PHOTOS 》</span></a>
+      </div>
+      <div class="paragraph">
+        <p align: justify>Tempat yang sempurna untuk bersantai, bercengkerama, dan menikmati hidangan lezat.  Rasakan kehangatan dan keakraban di setiap sudut restoran kami, dengan suasana yang nyaman dan ramah untuk pertemuan dengan teman, keluarga, atau pasangan.  Nikmati cita rasa autentik dan hidangan kreatif yang menggugah selera, disajikan dengan penuh perhatian dan keramahan.  Mingle Resto, tempat yang ideal untuk menciptakan momen-momen berkesan bersama orang-orang spesial.</p>
+      </div>
+    <!-- Gallery Section: Makanan Pembuka -->
+    <div class="gallery" id="makanan-pembuka">
+        <h2>Makanan Pembuka</h2>
+        <div class="gallery-items">
+            <div class="gallery-item">
+                <img src="bruschetta.jpg" alt="Bruschetta">
+                <p>Bruschetta</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Somtam.jpg" alt="Somtam">
+                <p>Somtam</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Sushi.jpg" alt="Sushi">
+                <p>Sushi</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Section: Makanan Utama -->
+    <div class="gallery" id="makanan-utama">
+        <h2>Makanan Utama</h2>
+        <div class="gallery-items">
+            <div class="gallery-item">
+                <img src="Nasigoreng.jpg" alt="Nasi Goreng">
+                <p>Nasi Goreng</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Rendangg.jpg" alt="Rendang">
+                <p>Rendang</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Soto.jpg.webp" alt="Soto">
+                <p>Soto</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Section: Makanan Penutup -->
+    <div class="gallery" id="makanan-penutup">
+        <h2>Makanan Penutup</h2>
+        <div class="gallery-items">
+            <div class="gallery-item">
+                <img src="Cake.jpg" alt="Cake">
+                <p>Cake</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Pudding.png" alt="Pudding">
+                <p>Pudding</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Icecream.jpg" alt="Ice Cream">
+                <p>Ice Cream</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Section: Makanan Penutup -->
+    <div class="gallery" id= "Drink">
+        <h2>Minuman</h2>
+        <div class="gallery-items">
+            <div class="gallery-item">
+                <img src="Green tea smoothie.jpg" alt="matcha">
+                <p>Green Tea Smoothie</p>
+            </div>
+            <div class="gallery-item">
+                <img src="iced-americano.jpg" alt="cofee">
+                <p>Ice Americano</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Jus alpkukat.jpg" alt="jus">
+                <p>Jus Alpukat</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p align="center">&copy; Submited by `Mingle Resto</p>
+    </footer>
+</body>
+</html>
