@@ -1,0 +1,46 @@
+header {
+    background-color: rgb(39, 39, 36);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    padding: 20px;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+li a:hover {
+    color: rgb(112, 113, 126);
+    transform:rotate(2deg);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+    text-align:center;
+}
+
+table {
+    width: 60%;
+    height: 27%;
+}
