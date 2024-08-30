@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Website</title>
+    <style>
+        .judul {
+            text-align: center;
+            background-color: white; /* Tambahkan latar belakang putih */
+            padding: 20px; /* Sama dengan padding pada form dan aside */
+            border-radius: 10px; /* Sama dengan border radius pada form dan aside */
+            max-width: 500px; /* Sama dengan max-width pada form dan aside */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sama dengan box shadow pada form dan aside */
+            margin: 0 auto; /* Center align */
+        }
+
+        .attention {
+            background-color: black;
+            color: white;
+            padding: 1px;
+            text-align: center;
+            border-radius: 8px;
+            max-width: 500px; /* Sama dengan max-width pada form dan aside */
+            margin: 20px auto; /* Center align dengan jarak atas-bawah */
+        }
+
+        /* Tambahan CSS untuk form dan aside dalam kotak */
+        .form-container, .aside-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto; /* Center align */
+        }
+
+        .form-container {
+            margin-bottom: 20px; /* Mengatur jarak antara form dan asides */
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        .form-container .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-container .button-container input[type="submit"] {
+            width: 48%;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: grey;
+        }
+
+        /* Warna khusus untuk tombol "SETEL ULANG KATA SANDI" dan "LUPA AKUN EMAIL" */
+        .form-container .button-container input[value="SETEL ULANG KATA SANDI"] {
+            background-color: yellow;
+            color: black;
+        }
+
+        .form-container .button-container input[value="LUPA AKUN EMAIL"] {
+            background-color: green;
+            color: white;
+        }
+
+        main {
+            padding: 20px;
+            align-items: flex-start;
+            height: calc(100vh - 60px);
+        }
+
+        aside {
+            background-color: white;
+            padding: 20px;
+            width: 100%;
+            margin: 10px 0;
+            box-sizing: border-box;
+            overflow-y: auto;
+            border-radius: 5px;
+        }
+
+        aside ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        aside ul li {
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column; /* Agar elemen memanjang ke bawah */
+            align-items: flex-start;
+        }
+
+        aside ul li a {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-bottom: 5px; /* Menambahkan jarak antara link dan teks deskripsi */
+            width: 100%; /* Mengatur lebar penuh */
+        }
+
+        aside ul li a:hover {
+            background-color: #0056b3;
+        }
+
+        .asides-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px; /* Mengurangi gap untuk mengurangi jarak antara asides */
+            max-width: 1000px; /* Center align asides and form */
+            margin: 0 auto; /* Center align */
+        }
+
+        .asides-wrapper .aside-container {
+            width: 100%;
+            max-width: 300px; /* Memberikan batas lebar pada setiap kotak aside */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="judul">
+            <h2>SISTEM INFORMASI AKADEMIK</h2>
+            <h3>INSTITUT TEKNOLOGI DAN BISNIS</h3>
+            <p style="color: black;">Sistem informasi manajemen (akademik) untuk mengakomodasi keperluan administrasi di lingkungan Universitas Bahaudin Mudhary Madura (UNUBA). Sistem ini juga terintegrasi dengan berbagai aplikasi yang digunakan untuk kegiatan perkuliahan maupun administratif lainnya.</p>
+        </div>
+        <div class="attention">
+            <h3>APAKAH ANDA GAGAL LOGIN?</h3>
+            <p style="background-color: white; color: black; padding: 5px; border-radius: 7px;">Silahkan pahami pertanyaan yang sering muncul, Silahkan <a href="#">klik di sini</a></p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Bagian Form -->
+        <section class="form-container">
+            <h3 style="text-align: center">MASUK</h3>
+            <form action="/action_page.php">
+                <label for="lname">Nama Belakang</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="password">Kata Sandi</label><br>
+                <input type="text" id="password" name="password"><br>
+                <input type="submit" value="LOGIN"><br>
+                <div class="button-container">
+                    <input type="submit" value="SETEL ULANG KATA SANDI">
+                    <input type="submit" value="LUPA AKUN EMAIL">
+                </div>
+            </form>
+        </section>
+
+        <!-- Bagian Asides -->
+        <div class="asides-wrapper">
+            <!-- Aside kiri -->
+            <div class="aside-container">
+                <aside>
+                    <h3 style="text-align: center;">KALENDER AKADEMIK</h3>
+                    <ul>
+                        <li><a href="#">26 Agustus 2024 sampai 30 agustus 2024</a> <span>Perwalian(Pengisian KRS + KHP + Konsultasi PH)</span></li>
+                        <li><a href="#">09 September 2024 sampai 25 Oktober 2024</a> <span>PBM Tahap I</span></li>
+                        <li><a href="#">09 September 2024 sampai 20 September 2024</a> <span>Masa KPRS (Kartu Perubahan Rencana Studi)</span></li>
+                        <li><a href="#">20 September 2024 sampai 20 September 2024</a> <span>Atas Akhir Penyelesaian Status Mahasiswa</span></li>
+                        <li><a href="#">28 Oktober 2024 sampai 08 November 2024</a> <span>Ujian Tengah Semester</span></li>
+                    </ul>
+                </aside>
+            </div>
+
+            <!-- Aside kanan -->
+            <div class="aside-container">
+                <aside>
+                    <h3 style="text-align: center;">PENGUMUMAN</h3>
+                </aside>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
