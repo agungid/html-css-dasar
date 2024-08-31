@@ -1,18 +1,39 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 header {
-    background-color: rgb(39, 39, 36);
+    background-color: grey;
     color: white;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-div {
-    display: flex;
-    justify-content: center;
+.tahu {
+    margin-right:auto;
+    margin-left: 10px;
 }
 
+.follow {
+    margin-right: 10px;
+    background-color: red;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor:pointer;
+    transition: .5s ease 0s;
+}
+
+.follow:hover {
+    background-color: rgb(136, 30, 30);
+}
 nav ul {
     display: flex;
     padding: 20px;
@@ -23,24 +44,45 @@ li {
     padding: 10px;
 }
 
-li a:hover {
-    color: rgb(112, 113, 126);
-    transform:rotate(2deg);
-}
-
 a {
     color: white;
     text-decoration: none;
+}
+
+.container{
+    /* max-width: 1200px; */
+    display: flex;
+    justify-content: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 30px;
+    font-weight: border;
 }
 
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     font-size: 20px;
-    text-align:center;
+    /* text-align:center;
+    display: flex;
+    justify-content: center */
 }
 
-table {
-    width: 60%;
-    height: 27%;
+.table {
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
