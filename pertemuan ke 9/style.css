@@ -1,0 +1,42 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+header{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: rgb(56, 52, 52);
+    color: aliceblue;
+    padding: 5px;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 10px ridge rgb(70, 224, 70); 
+}
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li{
+    margin: 20px;
+}
+header nav ul a{
+
+    color: aliceblue;
+}
+.utama{
+    display: flex;
+}
+aside ul{
+    margin: 10px;
+    background-color: powderblue;
+}
+aside ul li{
+    display: flex;
+    justify-content: center;
+}
