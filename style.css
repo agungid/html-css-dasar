@@ -82,7 +82,33 @@ table, th, td {
 }
 
 .table {
+    height: 250px;
     text-align: center;
     display: flex;
+    justify-content: center;   
+}
+
+.background_table {
+    background-image: url(bendera.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image {
+    display: flex;
+    flex-direction:column;
+}
+
+.presiden {
+    display: flex;
     justify-content: center;
+    text-align: center;
+}
+
+.p_presiden {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
